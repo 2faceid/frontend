@@ -10,7 +10,7 @@ const App = () => {
   },[users])
 
   const loadData = () => {
-    axios.get('http://localhost:3001/api/users')
+    axios.get('http://3.87.87.235:3001/api/users')
     .then(res =>{
       setUsers(res.data.users)
     })
